@@ -1,0 +1,50 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Cor de fundo clara */
+    color: #333; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Alinha os elementos na vertical */
+}
+
+/* Estilo do título */
+h1 {
+    color: #4a4a8a; /* Cor roxa para o título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos parágrafos */
+p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Estilo do texto em negrito */
+strong {
+    color: #4a4a8a; /* Destaque em roxo */
+}
+
+/* Adicionando contorno ao conteúdo */
+body {
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+

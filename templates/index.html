@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correlação da Venda de leite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+</head>
+<body>
+    <h1>Resultado da Correlação</h1>
+    <p><strong>Correlação encontrada :</strong> {{ correlacao|round(2) }}</p>
+    <p><strong>Intensidade da Correlação:</strong> {{ intensidade }}</p>
+    <p><strong>Sinal da Correlação:</strong> {{ sinal }}</p>
+</body>
+</html>
