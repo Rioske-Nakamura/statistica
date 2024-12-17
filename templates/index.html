@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correlação da Venda de leite</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+    <title>Correlação</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        h1 { color: #4CAF50; }
+        p { font-size: 18px; }
+    </style>
 </head>
 <body>
-    <h1>Resultado da Correlação</h1>
-    <p><strong>Correlação encontrada :</strong> {{ correlacao|round(2) }}</p>
-    <p><strong>Intensidade da Correlação:</strong> {{ intensidade }}</p>
-    <p><strong>Sinal da Correlação:</strong> {{ sinal }}</p>
+    <h1>Correlação entre União Europeia e Índia</h1>
+    <p><strong>Valor da correlação:</strong> {{ correlacao }}</p>
+    <p><strong>Intensidade:</strong> {{ intensidade }}</p>
+    <p><strong>Sinal:</strong> {{ sinal }}</p>
+    <a href="/media">Ver média</a> | 
+    <a href="/mediana">Ver mediana</a> | 
+    <a href="/moda">Ver moda</a>
 </body>
 </html>
