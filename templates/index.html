@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correlação</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #4CAF50; }
-        p { font-size: 18px; }
-    </style>
+    <title>Resultados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
 </head>
 <body>
-    <h1>Correlação entre União Europeia e Índia</h1>
-    <p><strong>Valor da correlação:</strong> {{ correlacao }}</p>
-    <p><strong>Intensidade:</strong> {{ intensidade }}</p>
-    <p><strong>Sinal:</strong> {{ sinal }}</p>
-    <a href="/media">Ver média</a> | 
-    <a href="/mediana">Ver mediana</a> | 
-    <a href="/moda">Ver moda</a>
+    <h1>Resultado da Correlação</h1>
+    <p>Correlação: {{ correlacao }}</p>
+    <p>Intensidade: {{ intensidade }}</p>
+    <p>Sinal: {{ sinal }}</p>
+    <h2>Gráfico</h2>
+    <img src="{{ grafico }}" alt="Gráfico de Correlação">
+    <img src="../static/images/g1.png">
+    <img src="../static/images/g2.png">
+    <div class="lado">
+
+        <a href="/media">Ver média</a>
+        <a href="/mediana">Ver mediana</a>
+        <a href="/moda">Ver moda</a>
+    </div>
 </body>
 </html>

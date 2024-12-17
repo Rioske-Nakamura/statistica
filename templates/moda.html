@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #9C27B0; }
-        p { font-size: 18px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background-color: #f9f9f9; 
+            color: #333; 
+        }
+        h1 { 
+            color: #9C27B0; 
+        }
+        p { 
+            font-size: 18px; 
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #9C27B0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #7B1FA2;
+        }
+        footer {
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
-    <h1>Modas das Variáveis</h1>
-    <p><strong>Moda União Europeia:</strong> {{ moda_ue }}</p>
-    <p><strong>Moda Índia:</strong> {{ moda_india }}</p>
-    <a href="/">Voltar para correlação</a>
+    <main>
+        <h1>Modas das Variáveis</h1>
+        <p><strong>Moda União Europeia:</strong> {{ moda_ue }}</p>
+        <p><strong>Moda Índia:</strong> {{ moda_india }}</p>
+        <img src="{{ grafico }}" >
+    </main>
+    <footer>
+        <a href="/">Voltar para correlação</a>
+    </footer>
 </body>
 </html>
